@@ -1,0 +1,33 @@
+class F(){
+  var c="hi"
+  def fun=((a:Int)=>{
+    if(a>0)
+      println(a)
+    else
+       println(c)
+    })
+}
+
+
+
+object Hel extends App {
+  var d = new F()
+  var a=List(10,20,-1)
+  d.fun(10)
+  println(a.map(o=>(d.fun(o))))
+  
+}
+example 2:
+class F(){
+  var c="hi"
+  val d=((x:Int)=>if(x>0) println(x) else println("hi"))
+}
+
+
+
+object Hel extends App {
+  var e = new F()
+  var a=List(10,20,-1)
+ println(a.map(p=>e.d(p)))
+  
+}
